@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        JavaScript Assignment 1
+    </title>
+</head>
+
+<body style = "text-align:center;">
+
+<h1>
+    Assignment 1
+</h1>
+
+<p>
+    Enter your First name
+</p>
+
+<form action="js1.html" id="id1">
+    First Name:<input type="text" placeholder="First Name" name="firstname"/><br><br>
+</form>
+<button onclick="func1(func2)">Submit</button>
+
+<script>
+			function func2(){
+				const form = document.getElementById('id1');
+				var first=form.elements['firstname'].value;
+				var msg = "Hi, Your Firstname is '"+first+"'";
+				return msg;
+			}
+			function func1(func){
+				alert(func());
+			}
+		</script>
+</body>
+</html>
